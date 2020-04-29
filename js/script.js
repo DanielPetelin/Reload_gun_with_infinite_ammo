@@ -1,5 +1,5 @@
 document.onclick = () => {
-    let delPatron = +document.querySelector('.patrons').value--;
+    +document.querySelector('.patrons').value--;
     let audio = new Audio();
     audio.src = './sounds/Выстрел.mp3';
     let audioEmpty = new Audio();
