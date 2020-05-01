@@ -6,13 +6,13 @@ document.onclick = () => {
     audioEmpty.src = './sounds/пустой выстрел.wav';
 
     if (document.querySelector('.patrons').value <= 5 && document.querySelector('.patrons').value >= 0) {
-        audio.autoplay = true;   
+        audio.autoplay = true;
         audioEmpty.autoplay = false;
     } else {
-        +document.querySelector('.patrons').value++; 
+        +document.querySelector('.patrons').value++;
 
         audioEmpty.autoplay = true;
-        audio.autoplay = false;  
+        audio.autoplay = false;
     };
 };
 
@@ -22,8 +22,8 @@ document.addEventListener('keydown', function(event) {
 
     if (event.code == 'KeyR' && document.querySelector('.patrons').value < 5) {
         audio3.autoplay = true;
-        
-        document.querySelector('.patrons').value = 5; 
+
+        document.querySelector('.patrons').value = 5;
     } else {
         audio3.outoplay = false;
     };
